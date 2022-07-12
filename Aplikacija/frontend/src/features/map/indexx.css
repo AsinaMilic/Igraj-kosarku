@@ -1,0 +1,30 @@
+.search {
+    width: 100%;
+    
+    z-index: 10;
+  }
+  
+.search input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+
+}
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  
+}
+
+.locate {
+
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.locate img {
+  width: 45px;
+  cursor: pointer;
+}
+.gm-svpc {
+  transform: scale(1.0); /*nzm dal da povecam coveculjka*/
+}
