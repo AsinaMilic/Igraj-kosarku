@@ -3,7 +3,7 @@ import { setCredentials, logOut, selectCurrentToken } from '../features/auth/aut
 import { useSelector } from 'react-redux';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://localhost:7300', //3500 je bilo
+    baseUrl: 'https://kosarkaapi.azurewebsites.net', //3500 je bilo. 7300 je bilo 
     credentials: 'same-origin', //https://www.youtube.com/watch?v=-JJFQ9bkUbo 7:30 "u want to send cookie with every query"
     prepareHeaders: (headers)=>{
         headers.set('Access-Control-Allow-Origin', '*') //ne reseva bug za cross origin

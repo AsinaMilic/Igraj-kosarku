@@ -32,7 +32,7 @@ function ForgotPassword() {
   
   const HandleSubmit = () => {
     setSent(true);
-    fetch(`https://localhost:7300/Users/reset-password?email=${Email}`,{
+    fetch(`https://kosarkaapi.azurewebsites.net/Users/reset-password?email=${Email}`,{
       method: 'GET',
       headers:  {'Content-Type': 'application/json'},
     }).then(setPoslato(true))

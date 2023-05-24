@@ -94,7 +94,7 @@ const Teams = ({teams,Act}) => {
 
             const data = { name: `${obj.name}` , color: `${obj.color}` }; //radi
             const token=localStorage.getItem('token')
-            fetch('https://localhost:7300/api/Team', {
+            fetch('https://kosarkaapi.azurewebsites.net/api/Team', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,  

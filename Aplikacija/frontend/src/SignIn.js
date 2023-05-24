@@ -57,7 +57,7 @@ function SignIn() {
       email: userObject?.email,
       password: "Admin123"
     }
-    fetch(`https://localhost:7300/Users/auth`,{
+    fetch(`https://kosarkaapi.azurewebsites.net/Users/auth`,{
       method: 'POST',
       headers:  {'Content-Type': 'application/json'},
       body: JSON.stringify(obj)

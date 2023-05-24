@@ -50,7 +50,7 @@ const ResetPassword = () => {
         setMinError2(false)
     }
     const Submit=()=>{
-      fetch(`https://localhost:7300/Users/reset-password/${id}`,{
+      fetch(`https://kosarkaapi.azurewebsites.net/Users/reset-password/${id}`,{
       method: 'POST',
       headers:  {'Content-Type': 'application/json'},
       body: JSON.stringify(password)

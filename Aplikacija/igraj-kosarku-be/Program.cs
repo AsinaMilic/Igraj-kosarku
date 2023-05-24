@@ -83,8 +83,8 @@ builder.Services.AddScoped<IStorageService, StorageService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
+
     app.UseSwagger();
     app.UseSwaggerUI();
 
@@ -212,14 +212,14 @@ if (app.Environment.IsDevelopment())
         context.Categories.AddRange(categories);
         context.SaveChanges();
     }
-}
+
 
 // global cors policy
 app.UseCors(x => x
-    .WithOrigins("http://localhost:3000")
-    .AllowAnyOrigin()
+    .WithOrigins("http://localhost:3000", "https://kosarkaapi.azurewebsites.net", "https://igrajkosarku.azurewebsites.net")
     .AllowAnyMethod()
     .AllowAnyHeader());
+
 
 //app.UseExceptionHandler("/api/exception");
 

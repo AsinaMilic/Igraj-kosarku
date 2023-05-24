@@ -46,7 +46,7 @@ export const AccountProfile = ({user,ZaUredjajem}) => {
             const id=currentUser?.id
            
             const token=localStorage.getItem('token')
-            fetch(`https://localhost:7300/Users/update/${id}`,{
+            fetch(`https://kosarkaapi.azurewebsites.net/Users/update/${id}`,{
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,  
